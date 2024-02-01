@@ -29,6 +29,7 @@ public abstract class Match
             AnsiConsole.MarkupLine("[red]There is not a saved game[/]");
             AnsiConsole.MarkupLine("Program will close after pressing a button");
             Console.ReadLine();
+            return;
         }
 
         var savedGame = JsonSerializer.Deserialize<SaveView>(File.ReadAllText(_fileName));
