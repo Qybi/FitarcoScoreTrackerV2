@@ -10,15 +10,15 @@ namespace CLED.FINECOTrackerV2.Models;
 
 public abstract class Match
 {
-    protected int _maxScore;
-    protected IEnumerable<int> _bullseyeValue = [10];
-    protected IEnumerable<int> _centerValue = [10];
-    protected int _maxNumberOfRounds;
-    protected string _fileName = string.Empty;
-    protected bool _isManualBullseye = false;
-    protected bool _invertedBullseyeLabels = false;
-    protected string _bullseyeLabel = string.Empty;
-    protected string _centerLabel = string.Empty;
+    protected int _maxScore { get; set; }
+    protected IEnumerable<int> _bullseyeValue { get; set; } = [10];
+    protected IEnumerable<int> _centerValue { get; set; } = [10];
+    protected int _maxNumberOfRounds { get; set; }
+    protected string _fileName { get; set; } = string.Empty;
+    protected bool _isManualBullseye { get; set; } = false;
+    protected bool _invertedBullseyeLabels { get; set; } = false;
+    protected string _bullseyeLabel { get; set; } = string.Empty;
+    protected string _centerLabel { get; set; } = string.Empty;
     public Archer Archer { get; set; }
     public DateTime Date { get; set; }
     public List<Score> Scores { get; set; }
