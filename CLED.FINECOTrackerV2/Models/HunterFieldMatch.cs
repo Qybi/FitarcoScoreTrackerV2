@@ -15,8 +15,8 @@ internal class HunterFieldMatch : Match
         this._centerValue = [5, 6];
         this._maxNumberOfRounds = 24;
         this._fileName = "hf.json";
-        this._centerLabel = "5";
-        this._bullseyeLabel = "6+5";
+        this._centerLabel = "6+5";
+        this._bullseyeLabel = "6";
         this._invertedBullseyeLabels = true;
     }
 }
